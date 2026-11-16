@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Запись и контакты — секция роллерспорта</title>
+    <meta name="description" content="Запись в секцию роллерспорта в Нижнем Новгороде: заявка, телефоны тренеров, адрес и карта.">
+    <meta name="theme-color" content="#0a0e15">
+    <link rel="icon" href="assets/images/logo1.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&family=Unbounded:wght@600;800&display=swap">
+    <link rel="stylesheet" href="css/style.css">
+    <script>document.documentElement.classList.add("js");</script>
+</head>
+<body>
+    <header class="site-header" data-header>
+        <div class="wrap header-inner">
+            <a class="brand" href="index.html" aria-label="На главную">
+                <img src="assets/images/logo-light.png" alt="Федерация роллер спорта Нижегородской области" width="52" height="52">
+                <span class="brand-text">
+                    <span class="brand-name">Роллерспорт</span>
+                    <span class="brand-sub">Нижний Новгород</span>
+                </span>
+            </a>
+            <nav class="nav" id="site-nav">
+                <a href="index.html">Главная</a>
+                <a href="index.html#place">Где занятия</a>
+                <a href="index.html#coaches">Тренеры</a>
+                <a href="index.html#prices">Цены</a>
+                <a href="index.html#media">Фото</a>
+                <a class="active" href="contact.html">Запись и контакты</a>
+            </nav>
+            <a class="btn btn-sm header-cta" href="tel:+79056682828">Позвонить</a>
+            <button class="burger" type="button" aria-label="Меню" aria-expanded="false" aria-controls="site-nav" data-burger>
+                <span></span><span></span>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero hero-page">
+            <div class="hero-bg-word" aria-hidden="true">запись</div>
+            <div class="wrap hero-grid">
+                <div class="hero-text">
+                    <p class="eyebrow" data-reveal><span class="live-dot"></span>Запись</p>
+                    <h1 data-reveal style="--i:1">Записаться <em>на&nbsp;секцию</em></h1>
+                    <p class="lead" data-reveal style="--i:2">
+                        Оставьте заявку или позвоните тренеру — подскажем группу
+                        и время первой тренировки.
+                    </p>
+                    <ul class="hero-facts" data-reveal style="--i:3">
+                        <li>Пн–Пт, 13:00–21:00</li>
+                        <li>Скейт-парк «Горадром»</li>
+                    </ul>
+                </div>
+                <div class="page-photo-wrap" data-reveal style="--i:2">
+                    <div class="page-photo">
+                        <img src="assets/images/1beec65c-766d-4bf1-a9e1-2bc801464bb8.jpg" alt="Команда секции">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section section-tight">
+            <div class="wrap">
+                <div class="contact-grid">
+                    <article class="card form-card" data-reveal>
+                        <h2>Оставить заявку</h2>
+                        <p class="form-note">После отправки откроется почтовая программа с готовым письмом.</p>
+                        <form class="form" data-signup-form data-email="lilannn@yandex.ru">
+                            <div class="form-row">
+                                <label>
+                                    Имя
+                                    <input name="name" type="text" placeholder="Как к вам обращаться" autocomplete="name" required>
+                                </label>
+                                <label>
+                                    Телефон
+                                    <input name="phone" type="tel" placeholder="+7 (___) ___-__-__" autocomplete="tel" required>
+                                </label>
+                            </div>
+                            <label>
+                                Возраст
+                                <input name="age" type="number" min="3" max="80" placeholder="Возраст ученика" inputmode="numeric">
+                            </label>
+                            <fieldset class="group-pick">
+                                <legend>Группа</legend>
+                                <label class="pill"><input type="radio" name="group" value="Дети" required><span>Дети</span></label>
+                                <label class="pill"><input type="radio" name="group" value="Подростки"><span>Подростки</span></label>
+                                <label class="pill"><input type="radio" name="group" value="Взрослые"><span>Взрослые</span></label>
+                                <label class="pill"><input type="radio" name="group" value="Индивидуально"><span>Индивидуально</span></label>
+                            </fieldset>
+                            <label>
+                                Комментарий
+                                <textarea name="comment" placeholder="Удобные дни, есть ли свои ролики"></textarea>
+                            </label>
+                            <button class="btn" type="submit">
+                                Отправить заявку
+                                <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+                            </button>
+                            <p class="form-status" data-form-status role="status"></p>
+                        </form>
+                    </article>
+
+                    <div class="stack">
+                        <article class="card" data-reveal style="--i:1">
+                            <h2>Телефоны тренеров</h2>
+                            <ul class="phone-list">
+                                <li>
+                                    <span>Павлушин Евгений</span>
+                                    <a class="btn btn-sm" href="tel:+79056682828">+7 (905) 668-28-28</a>
+                                </li>
+                                <li>
+                                    <span>Дмитрий Какойто</span>
+                                    <a class="btn btn-sm btn-ghost" href="tel:+70000000000">+7 (000) 000-00-00</a>
+                                </li>
+                            </ul>
+                        </article>
+
+                        <article class="card" data-reveal style="--i:2">
+                            <h2>Где нас найти</h2>
+                            <ul class="info-list">
+                                <li>
+                                    <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.8-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>
+                                    <div><strong>Адрес</strong>Нижний Новгород, наб. Гребного канала, 108Г</div>
+                                </li>
+                                <li>
+                                    <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+                                    <div><strong>Время занятий</strong>Пн–Пт, 13:00–21:00</div>
+                                </li>
+                                <li>
+                                    <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg>
+                                    <div><strong>Почта</strong><a href="mailto:lilannn@yandex.ru">lilannn@yandex.ru</a></div>
+                                </li>
+                            </ul>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section section-tight">
+            <div class="wrap">
+                <div class="map-frame" data-reveal>
+                    <iframe
+                        src="https://yandex.ru/map-widget/v1/?text=%D0%9D%D0%B8%D0%B6%D0%BD%D0%B8%D0%B9%20%D0%9D%D0%BE%D0%B2%D0%B3%D0%BE%D1%80%D0%BE%D0%B4%2C%20%D0%BD%D0%B0%D0%B1%D0%B5%D1%80%D0%B5%D0%B6%D0%BD%D0%B0%D1%8F%20%D0%93%D1%80%D0%B5%D0%B1%D0%BD%D0%BE%D0%B3%D0%BE%20%D0%BA%D0%B0%D0%BD%D0%B0%D0%BB%D0%B0%2C%20108%D0%93&amp;z=15"
+                        title="Карта: набережная Гребного канала, 108Г"
+                        loading="lazy"
+                        allowfullscreen></iframe>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="wrap footer-inner">
+            <div class="footer-brand">
+                <img src="assets/images/logo-light.png" alt="" width="64" height="64" loading="lazy">
+                <p>Федерация роллер спорта<br>Нижегородской области</p>
+            </div>
+            <nav class="footer-nav" aria-label="Разделы">
+                <a href="index.html#about">О секции</a>
+                <a href="index.html#place">Где занятия</a>
+                <a href="index.html#coaches">Тренеры</a>
+                <a href="index.html#prices">Цены</a>
+                <a href="index.html">На главную</a>
+            </nav>
+            <div class="footer-contacts">
+                <a href="tel:+79056682828">+7 (905) 668-28-28</a>
+                <span>Нижний Новгород, наб. Гребного канала, 108Г</span>
+                <span>Пн–Пт, 13:00–21:00</span>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
