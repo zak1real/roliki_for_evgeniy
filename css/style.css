@@ -111,6 +111,16 @@ h1 em {
     color: var(--red-2);
 }
 
+/* «Нижегородской области» — второй строкой мельче, иначе длинное слово не влезает на телефоне */
+.h1-sub {
+    display: block;
+    margin-top: 0.35em;
+    font-size: 0.42em;
+    font-weight: 600;
+    letter-spacing: 0;
+    color: var(--text);
+}
+
 h2 {
     font-weight: 800;
     font-size: clamp(1.7rem, 3.4vw, 2.6rem);
@@ -800,8 +810,10 @@ h3 {
     gap: 24px;
 }
 
-.place-card .btn {
-    align-self: flex-start;
+.place-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
     margin-top: auto;
 }
 
@@ -864,9 +876,8 @@ h3 {
 
 /* Тренеры */
 .coach {
-    display: grid;
-    grid-template-columns: 0.85fr 1fr;
-    gap: 6px;
+    display: flex;
+    flex-direction: column;
     background: var(--card);
     border: 1px solid var(--line);
     border-radius: var(--radius);
@@ -874,16 +885,30 @@ h3 {
 }
 
 .coach-photo {
-    aspect-ratio: 4 / 5;
+    aspect-ratio: 1;
     border-radius: 16px;
     overflow: hidden;
     background: var(--card-2);
 }
 
+.coach-photo-empty {
+    display: grid;
+    place-items: center;
+    background:
+        radial-gradient(70% 70% at 30% 20%, rgba(42, 100, 212, 0.45), transparent 70%),
+        radial-gradient(60% 60% at 80% 90%, rgba(232, 57, 45, 0.35), transparent 70%),
+        var(--card-2);
+    font-family: var(--font-display);
+    font-weight: 800;
+    font-size: 7rem;
+    color: rgba(255, 255, 255, 0.9);
+}
+
 .coach-body {
+    flex: 1;
     display: flex;
     flex-direction: column;
-    padding: 16px 14px 14px 18px;
+    padding: 18px 14px 14px;
 }
 
 .coach-body h3 {
@@ -891,13 +916,12 @@ h3 {
 }
 
 .coach-groups {
-    margin-top: 8px;
+    margin: 8px 0 20px;
     color: var(--muted);
 }
 
 .coach-exp {
-    margin: auto 0 20px;
-    padding-top: 20px;
+    margin: 0 0 20px;
     color: var(--muted);
     font-size: 0.95rem;
 }
@@ -911,8 +935,10 @@ h3 {
     color: var(--text);
 }
 
+/* Кнопка прижата к низу, чтобы в ряду карточек разной высоты кнопки стояли на одной линии */
 .coach-body .btn {
     align-self: flex-start;
+    margin-top: auto;
 }
 
 /* Цены */
@@ -1535,6 +1561,10 @@ h3 {
         height: 46px;
     }
 
+    .brand-name {
+        font-size: 0.84rem;
+    }
+
     .hero {
         padding: 20px 0 72px;
     }
@@ -1610,10 +1640,6 @@ h3 {
 
     .stat {
         padding: 20px 18px;
-    }
-
-    .coach {
-        grid-template-columns: 1fr;
     }
 
     .coach-photo {
